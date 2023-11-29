@@ -2,10 +2,7 @@
 <p> A Internet das Coisas tornou-se importante na forma como gerimos o mundo que nos rodeia. As soluções IoT sem fio de curto alcance geralmente dependem de uma conexão Bluetooth ou Wi-Fi.
 Soluções de longo alcance, como rastreamento de ativos ou monitoramento do uso de serviços públicos, geralmente dependem de redes de longa distância de baixo consumo de energia, como LoRaWAN.</p>
 
-<p>Em todos esses casos, para que os dispositivos funcionem, eles precisam transferir dados, no entanto, existem muitos desafios quando se trata de transferir dados, como por exemplo a conectiviade e o consumo de energia.</p>
-
-<p>Pensando nesses desafios a comunicação por redes LPWAN (Low Power Wide Area Network) tem ganhado fama por propor soluções para resolver esses desafios. Protocolos como SigFox NB-IoT e LoRa®
-fazem parte das LPWANs.</p>
+<p>A partir do momento em que, devido ao aumento dos dispositivos de IoT, foi dada a necessidade de uma rede que consuma pouca energia, uma comunicação de longo alcance e baixo custo para conectar estes dispositivos. A LPWAN (Low Power Wide Area Network) preenche esses requisitos, porém com menor taxa de transmissão de dados e latência.</p>
 
 
 ## LoRaWAN®
@@ -19,7 +16,8 @@ fazem parte das LPWANs.</p>
 * Baixo consumo de energia o que aumenta a vida de dispositivos alimentados por baterias.
 * Baixa taxa de transmissão (0.3 - 50 Kpbs)
 * Utiliza frequências abaixo de 1 Ghz
-* O padrão LoRaWAN define a estrutura do pacote de dados, define como os pacotes serão processados no servidor e como serão encriptados.
+* O padrão LoRaWAN® define a estrutura do pacote de dados, define como os pacotes serão processados no servidor e como serão encriptados.
+* LoRaWAN® utiliza uma topologia de rede em estrela onde a topologia em estrela é empregada, mas as mensagens são recebidas por todas as estações base no intervalo.
 
 ### 2. Dispositivos
 <p>Os dispositivos LoRaWAN® pode enviar (uplink) e receber (downlink) pacotes de dados de e para gateways.</p>
@@ -52,6 +50,8 @@ fazem parte das LPWANs.</p>
 * Identifica os dispositivos
 * Mantém uma fila de downlinks
 * Seleciona o gateway que enviará o downlink para o dispositivo baseado no RSSI e SNR.
+* Decodifica pacotes recebidos de gateways conectados e codifica pacotes destinados aos nós conectados a eles.
+* Se várias cópias do mesmo pacote forem recebidas por meio de vários gateways, o servidor de rede determinará qual mensagem manter.
 
 ### 4. Manipulando Taxa de Dados
 <p>Quando se fala em manipulação de taxa de dados existem 3 fatores primordiais: TX, Spreading Factor e Bandwidth</p>
