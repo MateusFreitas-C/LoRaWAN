@@ -22,7 +22,7 @@ Soluções de longo alcance, como rastreamento de ativos ou monitoramento do uso
 ### 2. Dispositivos
 <p>Os dispositivos LoRaWAN® pode enviar (uplink) e receber (downlink) pacotes de dados de e para gateways.</p>
 
-<p>Os dispositivos LoRaWAN são divididos em diferentes classes.</p>
+<p>Os dispositivos LoRaWAN® são divididos em diferentes classes.</p>
 
 #### 2.1 Classe A
 * Todos os dispositivos devem ser compatíveis com essa classe
@@ -62,3 +62,12 @@ Soluções de longo alcance, como rastreamento de ativos ou monitoramento do uso
 
 <p>Aumentando a taxa de dados, ocasionalmente, será possível enviar um pacote maior de dados. No entando, quanto maior o pacote, mais tempo o pacote fica no ar, ou seja, mais tempo para
 ser transmitido, podendo atingir o tempo máximo de um pacote no ar e um dispositivo consome mais energia quando sua transmissão passa mais tempo no ar.</p>
+
+
+### 5. Gateways
+
+<p>As estações base LoRaWAN® são chamadas de gateways e são conectados a um servidor de rede por meio de um backhaul de maior taxa de transferência. Os gateways encaminham o pacote recebido para o servidor de rede junto com os metadados, como horário de chegada, indicador de intensidade de sinal (RSSI) e a relação sinal/ruído SNR.</p>
+
+<p>Quando um pacote é enviado, ele é recebido por todos os gateways que estão ao alcance. Na chegada dos pacotes os gateways possuem um relógio sincronizado com GPS, registram o timestamp de chegada de cada sinal.</p>
+
+<p>Quando pelo menos 3 gateways recebem um mesmo pacote, é possível calcular a posição do dispositivo baseado nos metadados do pacote. Quantos mais gateways recebe o pacote, mais precisa a localização.</p>
