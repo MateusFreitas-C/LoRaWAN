@@ -38,7 +38,7 @@ fazem parte das LPWANs.</p>
 * Os dispositivos podem receber downlinks em janelas especificadas de tempo
 * Devido a isso consome mais energia que a Classe A
 
-#### Classe C
+#### 2.3 Classe C
 * Pode receber mensagens a qualquer momento
 * Dispositivo está sempre ouvindo e esperando downlinks
 * Consome mais energia
